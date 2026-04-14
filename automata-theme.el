@@ -4,7 +4,7 @@
 
 ;; Author: Michel T. Soares <qualquercoisahhhh@gmail.com>
 ;; URL: http://github.com/tichelmorres/automata-theme
-;; Version: 0.1
+;; Version: 0.2
 
 ;; Permission is hereby granted, free of charge, to any person
 ;; obtaining a copy of this software and associated documentation
