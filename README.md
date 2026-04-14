@@ -6,7 +6,7 @@ the 2017 action RPG directed by YOKO TARO and developed by PlatinumGames.
 
 ## Screenshot
 
-<!-- TODO: add screenshot -->
+![automata-theme](https://imgur.com/a/UlehAM5)
 
 ## Installation
 
