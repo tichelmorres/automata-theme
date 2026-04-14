@@ -4,7 +4,7 @@
 
 ;; Author: Michel T. Soares <qualquercoisahhhh@gmail.com>
 ;; URL: http://github.com/tichelmorres/automata-theme
-;; Version: 0.2
+;; Version: 0.1
 
 ;; Permission is hereby granted, free of charge, to any person
 ;; obtaining a copy of this software and associated documentation
@@ -280,8 +280,8 @@
    `(jabber-activity-personal-face ((t  (     :foreground ,automata-red          :bold t  ))))
 
    ;; Line Highlighting
-   `(highlight                   ((t  (     :background ,automata-dark-gray :foreground nil))))
-   `(highlight-current-line-face ((t ,(list :background  automata-dark-gray :foreground nil))))
+   `(highlight                   ((t  (     :background ,automata-red       :foreground ,automata-background))))
+   `(highlight-current-line-face ((t ,(list :background  automata-dark-gray :foreground nil                 ))))
 
    ;; Line Numbers
    `(line-number              ((t (:inherit            default     :foreground    ,automata-light-gray
