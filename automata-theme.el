@@ -16,7 +16,7 @@
 
 ;; The above copyright notice and this permission notice shall be
 ;; included in all copies or substantial portions of the Software.
-
+;;
 ;; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 ;; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 ;; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -106,20 +106,22 @@
    `(font-latex-warning-face      ((t  (     :foreground ,automata-light-magenta         ))))
 
    ;; Basic Coloring (or Uncategorized)
-   `(border              ((t ,(list :background  automata-light-black :foreground automata-dark-brown   ))))
-   `(cursor              ((t  (     :background ,automata-red                                           ))))
-   `(default             ((t ,(list :foreground  automata-foreground  :background automata-background   ))))
-   `(fringe              ((t ,(list :background  nil                  :foreground automata-dark-brown   ))))
-   `(vertical-border     ((t ,(list :foreground  automata-dark-brown                                    ))))
-   `(link                ((t  (     :foreground ,automata-blue        :underline t                      ))))
-   `(link-visited        ((t  (     :foreground ,automata-teal        :underline t                      ))))
-   `(match               ((t  (     :background ,automata-light-gray                                    ))))
-   `(shadow              ((t  (     :foreground ,automata-light-gray                                    ))))
-   `(minibuffer-prompt   ((t  (     :foreground ,automata-blue                                          ))))
-   `(region              ((t  (     :background ,automata-light-brown :foreground nil                   ))))
-   `(secondary-selection ((t ,(list :background  automata-light-brown :foreground nil                   ))))
-   `(trailing-whitespace ((t ,(list :foreground  automata-dark-black  :background automata-light-magenta))))
-   `(tooltip             ((t ,(list :background  automata-light-gray  :foreground automata-light-white  ))))
+   `(border              ((t ,(list :background  automata-light-black :foreground automata-dark-brown           ))))
+   `(cursor              ((t  (     :background ,automata-red                                                   ))))
+   `(default             ((t ,(list :foreground  automata-foreground  :background automata-background           ))))
+   `(fringe              ((t ,(list :background  nil                  :foreground automata-dark-brown           ))))
+   `(vertical-border     ((t ,(list :foreground  automata-dark-brown                                            ))))
+   `(link                ((t  (     :foreground ,automata-blue        :underline t                              ))))
+   `(link-visited        ((t  (     :foreground ,automata-teal        :underline t                              ))))
+   `(match               ((t  (     :background ,automata-light-gray                                            ))))
+   `(shadow              ((t  (     :foreground ,automata-light-gray                                            ))))
+   `(minibuffer-prompt   ((t  (     :foreground ,automata-blue                                                  ))))
+   `(region              ((t  (     :background ,automata-light-brown :foreground nil                           ))))
+   `(secondary-selection ((t ,(list :background  automata-light-brown :foreground nil                           ))))
+   `(trailing-whitespace ((t ,(list :foreground  automata-dark-black  :background automata-light-magenta        ))))
+   `(tooltip             ((t ,(list :background  automata-light-gray  :foreground automata-light-white          ))))
+   `(warning             ((t  (     :foreground ,automata-light-magenta                                         ))))
+   `(header-line         ((t  (     :background ,automata-dark-gray   :foreground ,automata-light-white :box nil))))
 
    ;; Calendar
    `(holiday-face ((t (:foreground ,automata-light-magenta))))
@@ -164,23 +166,23 @@
    `(egg-term             ((t (:foreground  ,automata-red          ))))
 
    ;; ERC
-   `(erc-notice-face            ((t (:foreground ,automata-green                                      ))))
-   `(erc-timestamp-face         ((t (:foreground ,automata-blue      :bold t                          ))))
-   `(erc-input-face             ((t (:foreground ,automata-green                                      ))))
-   `(erc-my-nick-face           ((t (:foreground ,automata-red       :bold t                          ))))
-   `(erc-button                 ((t (                                :bold t :underline t             ))))
-   `(erc-default-face           ((t (:inherit    'default                                             ))))
-   `(erc-action-face            ((t (                                :bold t                          ))))
-   `(erc-command-indicator-face ((t (                                :bold t                          ))))
-   `(erc-direct-msg-face        ((t (:foreground ,automata-dark-magenta                               ))))
-   `(erc-error-face             ((t (:inherit    'error                                               ))))
-   `(erc-header-line            ((t (:background ,automata-dark-gray :foreground ,automata-light-white))))
-   `(erc-current-nick-face      ((t (:foreground ,automata-green     :bold t                          ))))
-   `(erc-nick-default-face      ((t (                                :bold t                          ))))
-   `(erc-nick-msg-face          ((t (:foreground ,automata-dark-magenta                               ))))
-   `(erc-nick-prefix-face       ((t (:inherit    'erc-nick-default-face                               ))))
-   `(erc-my-nick-prefix-face    ((t (:inherit    'erc-my-nick-face                                    ))))
-   `(erc-prompt-face            ((t (:foreground ,automata-red       :bold t                          ))))
+   `(erc-notice-face            ((t (:foreground ,automata-green                          ))))
+   `(erc-input-face             ((t (:foreground ,automata-foreground                     ))))
+   `(erc-default-face           ((t (:inherit    'default                                 ))))
+   `(erc-direct-msg-face        ((t (:foreground ,automata-dark-magenta                   ))))
+   `(erc-error-face             ((t (:foreground ,automata-light-magenta                  ))))
+   `(erc-header-line            ((t (:inherit    'header-line                             ))))
+   `(erc-nick-msg-face          ((t (:foreground ,automata-dark-magenta                   ))))
+   `(erc-nick-prefix-face       ((t (:inherit    'erc-nick-default-face                   ))))
+   `(erc-my-nick-prefix-face    ((t (:inherit    'erc-my-nick-face                        ))))
+   `(erc-timestamp-face         ((t (:foreground ,automata-blue       :bold t             ))))
+   `(erc-my-nick-face           ((t (:foreground ,automata-red        :bold t             ))))
+   `(erc-current-nick-face      ((t (:foreground ,automata-green      :bold t             ))))
+   `(erc-prompt-face            ((t (:foreground ,automata-red        :bold t             ))))
+   `(erc-action-face            ((t (                                 :bold t             ))))
+   `(erc-command-indicator-face ((t (                                 :bold t             ))))
+   `(erc-nick-default-face      ((t (                                 :bold t             ))))
+   `(erc-button                 ((t (                                 :bold t :underline t))))
 
    ;; EShell
    `(eshell-ls-backup     ((t (:foreground ,automata-dark-magenta))))
@@ -339,7 +341,9 @@
    `(sh-quoted-exec ((t (:foreground ,automata-light-magenta))))
 
    ;; Show Paren
-   `(show-paren-match-face    ((t (:background ,automata-light-gray  ))))
+   `(show-paren-match         ((t (:background ,automata-dark-white  ))))
+   `(show-paren-match-face    ((t (:inherit    'show-paren-match     ))))
+   `(show-paren-mismatch      ((t (:background ,automata-dark-magenta))))
    `(show-paren-mismatch-face ((t (:background ,automata-dark-magenta))))
 
    ;; Slime
@@ -364,10 +368,10 @@
    `(whitespace-hspace           ((t ,(list :background automata-background    :foreground automata-dark-brown   ))))
    `(whitespace-line             ((t ,(list :background automata-dark-brown    :foreground automata-light-magenta))))
    `(whitespace-newline          ((t ,(list :background automata-background    :foreground automata-dark-brown   ))))
-   `(whitespace-trailing         ((t ,(list :background automata-teal          :foreground automata-red          ))))
+   `(whitespace-trailing         ((t ,(list :background automata-dark-brown    :foreground automata-blue         ))))
    `(whitespace-empty            ((t ,(list :background automata-light-magenta :foreground automata-light-magenta))))
-   `(whitespace-indentation      ((t ,(list :background automata-red           :foreground automata-light-magenta))))
-   `(whitespace-space-after-tab  ((t ,(list :background automata-red           :foreground automata-red          ))))
+   `(whitespace-indentation      ((t ,(list :background automata-light-white   :foreground automata-red          ))))
+   `(whitespace-space-after-tab  ((t ,(list :background automata-light-white   :foreground automata-blue         ))))
    `(whitespace-space-before-tab ((t ,(list :background automata-green         :foreground automata-green        ))))
 
    ;; Tab-bar
